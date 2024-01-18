@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Article page</title>
+</head>
+
+<body>
+    <%- include("./partials/header.ejs") %>
+
+    <main>
+        <div class="container">
+            <div class="post">
+                <h2 class="post-title">
+                    <%= post.title %>
+                </h2>
+                <p class="post-content">
+                    <%= post.content %>
+                </p>
+                <p class="author">
+                    <%= post.author %>
+                </p>
+                <a href="/" type="back" value="Back to home" class="back-button"><<<</a>
+            </div>
+        </div>
+        
