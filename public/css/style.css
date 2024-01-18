@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.form{
+    grid-area: 2/2/3/2;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.PostSection{
+    grid-area: 3/2/4/2;
+    margin-top: 10%;
+}
+
+.forminput{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_input{
+    margin-bottom: 5%;
+    border: solid 2px;
+    border-color: black;
+    height: 5vh;
+}
+
+#postcontent{
+    margin-bottom: 5%;
+    border: solid 2px;
+    border-color: black;
+    height: 15vh;
+}
+
+.author-input{
+    margin-bottom: 5%;
+    border: solid 2px;
+    border-color: black;
+    height: 5vh;
+}
+
+#submit{
+    margin-top: 3%;
+    height: 5vh;
+    background-color: skyblue;
+    border: 2px skyblue;
+    color: white;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+#submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.submit-container{
+    display: flex;
+    justify-content: center;
+}
+
+.PostSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PostSection h2{
+    margin-bottom: 6%;
+    font-size: xx-large;
+}
+
+.PostSection ul{
+    list-style: none;
+    padding: 0;
+}
+
+.PostSection li{
+    margin-bottom: 7%;
+    font-size: large;
+}
+
+.PostSection a{
+    text-decoration: none;
+    color: black;
+}
+
+.PostSection a:hover{
+    color: skyblue;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        margin-top: 30%;
+    }
+
+    #submit{
+        width: 30vw;
+    }
+
+    .PostSection{
+        margin-top: 20%;
+    }
+    .PostSection h2{
+        margin-bottom: 12%;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .PostSection li{
+        font-size: medium;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px) {
+    
+    #submit{
+        width: 40vw;
+    }
+    
+}
